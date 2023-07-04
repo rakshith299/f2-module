@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Student Management System</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  </head>
+  <body>
+    <div class = "full-cont">
+        <h1 class = "main-heading"> Student Management CRUD</h1>
+
+        <h2 class = "sub-heading"><span id = "toDo">Enter</span> Student Details :</h2>
+        <form class = "form-cont" id = "form">
+            <input type = "text" name = "name" class = "input" id = "name" placeholder="Name" required/>
+            <input type = "email" name = "email" class = "input" id = "email" placeholder= "Email" required pattern = "/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/"/>
+            <input type = "text" name = "gpa" class = "input" id = "gpa" placeholder = "GPA" required min = "0" max = "10"/>
+            <input type = "number" name = "age" class = "input" id = "age" placeholder="Age" required/>
+            <input type = "text" name = "degree" class = "input" id = "degree" placeholder = "Degree" required/>
+
+            <div class = "form-but-cont">
+                <button type = "button" class = "button" id = "button" onclick="addStudentData()">Add Student</button>
+                <button type = "button" class = "button-2" id = "button-2" onclick="editTheText()">Edit Student</button>
+            </div>
+        </form>
+
+        <div class = "search-table-cont">
+            <div class = "input-search-cont"> 
+                <input id = "search" type = "text" class = "search" placeholder="Search by Name, Email or Degree"/>
+                <div class = "icon-cont">
+                    <span class="material-symbols-outlined search-icon">
+                        search
+                    </span>
+                </div>
+                
+            </div>
+
+            <table class = "table" id = "table">
+                <tr>
+                    <th class="t-id">Id</th>
+                    <th class="t-name">Student Name</th>
+                    <th class="t-email">Email</th>
+                    <th class="t-age">Age</th>
+                    <th class="t-gpa">GPA</th>
+                    <th class = "t-degree">Degree</th>
+                </tr>
+                
+                <tbody id = "tbody">   
+                    <tr id = "next-row">
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr style = "border-bottom: 1px solid white;">
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+
+                
+            </table>
+        </div>
+    </div>
+	<script src="script.js"></script>
+  </body>
+</html>
